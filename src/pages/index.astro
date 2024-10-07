@@ -3,13 +3,30 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import "motion";
+import { Image } from "astro:assets";
+import billede1 from "../assets/images/billede1.jpg";
+import billede2 from "../assets/images/billede2.jpg";
+import billede3 from "../assets/images/billede3.jpg";
+import billede4 from "../assets/images/billede4.jpg";
+import billede5 from "../assets/images/billede5.jpeg";
+import billede6 from "../assets/images/billede6.jpg";
+import billede7 from "../assets/images/billede7.jpg";
+import billede8 from "../assets/images/billede8.jpg";
+import billede9 from "../assets/images/billede9.jpg";
+import billede10 from "../assets/images/billede10.jpg";
+import billede11 from "../assets/images/billede11.jpg";
+import billede12 from "../assets/images/billede12.jpg";
+import bog_oppefra from "../assets/images/bog_oppefra.jpg";
+import forsidebillede from "../assets/images/forsidebillede.jpg";
+import sten_simons from "../assets/images/sten_simons.jpg";
+import aaben_venstre from "../assets/images/aaben_venstre.jpg";
 ---
 
 <MainLayout title="Titel">
   <article class="p-8">
     <section id="hero_unit" class="md:grid grid-cols-2">
-      <img
-        src="/src/assets/images/forsidebillede.jpg"
+      <Image
+        src={forsidebillede}
         alt="forsidebillede"
         class="animate__animated hover:shadow-drop-2-center"
       />
@@ -54,18 +71,19 @@ import "motion";
 
     <section id="billeder" class="px-8">
       <div class="md:grid grid-cols-3 gap-4">
-        <img
-          src="/src/assets/images/bog_oppefra.jpg"
+        <Image
+          src={bog_oppefra}
           alt="bog oppefra"
           class="py-2 hover:drop-shadow-2xl"
         />
-        <img
-          src="/src/assets/images/aaben_venstre.jpg"
+
+        <Image
+          src={aaben_venstre}
           alt="bog åben fra venstre"
           class="py-2 hover:drop-shadow-2xl"
         />
-        <img
-          src="/src/assets/images/forsidebillede.jpg"
+        <Image
+          src={forsidebillede}
           alt="forside af bog"
           class="py-2 hover:drop-shadow-2xl"
         />
@@ -441,63 +459,69 @@ import "motion";
       </h2>
 
       <div class="md:grid grid-cols-4 gap-4 px-8">
-        <img
-          src="/src/assets/images/billede1.jpg"
-          alt="billede1 "
+        <Image
+          src={billede1}
+          alt="billede1"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
-        <img
-          src="/src/assets/images/billede2.jpg"
+
+        <Image
+          src={billede2}
           alt="billede2"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
-        <img
-          src="/src/assets/images/billede3.jpg"
+
+        <Image
+          src={billede3}
           alt="billede3"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
-        <img
-          src="/src/assets/images/billede4.jpg"
+        <Image
+          src={billede4}
           alt="billede4"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
-        <img
-          src="/src/assets/images/billede5.jpeg"
+
+        <Image
+          src={billede5}
           alt="billede5"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
-        <img
-          src="/src/assets/images/billede6.jpg"
+        <Image
+          src={billede6}
           alt="billede6"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
-        <img
-          src="/src/assets/images/billede7.jpg"
+
+        <Image
+          src={billede7}
           alt="billede7"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
-        <img
-          src="/src/assets/images/billede8.jpg"
+
+        <Image
+          src={billede8}
           alt="billede8"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
-        <img
-          src="/src/assets/images/billede9.jpg"
+
+        <Image
+          src={billede9}
           alt="billede9"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
-        <img
-          src="/src/assets/images/billede10.jpg"
+        <Image
+          src={billede10}
           alt="billede10"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
-        <img
-          src="/src/assets/images/billede11.jpg"
+        <Image
+          src={billede11}
           alt="billede11"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
-        <img
-          src="/src/assets/images/billede12.jpg"
+        <Image
+          src={billede12}
           alt="billede12"
           class="w-[400px] h-[300px] object-fit hover:scale-125"
         />
@@ -512,10 +536,10 @@ import "motion";
           >
             Forfatteren
           </h2>
-          <img
-            src="/src/assets/images/sten_simons.jpg"
+          <Image
+            src={sten_simons}
+            alt="Sten Simons"
             class="w-[400px] h-[300px] object-cover pb-4 px-8"
-            alt="Sten Simon"
           />
         </div>
         <div class="place-items-center px-8 pr-36">
